@@ -8,7 +8,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
 
       {/* Section 1 - Hero */}
-      <section className="w-full bg-white">
+  <section id="inicio" className="w-full bg-white scroll-mt-24">
 
         <div className="max-w-6xl mx-auto px-6 py-16 flex flex-col-reverse lg:flex-row items-center gap-8">
 
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
 
       {/* Section 2 - Problemas que o paciente enfrenta */}
-      <section id="problemas" className="w-full bg-gray-50">
+  <section id="problemas" className="w-full bg-gray-50 scroll-mt-24">
 
         <div className="max-w-4xl mx-auto px-6 py-14">
 
@@ -130,8 +130,10 @@ export default function Home() {
 
       </section>
 
-      {/* Section 3 - Solução */}
-      <section id="solucao" className="w-full bg-white">
+  {/* Section 3 - Solução */}
+  {/* Anchor alias for header nav */}
+  <div id="abordagem" className="h-0 scroll-mt-24" aria-hidden="true"></div>
+  <section id="solucao" className="w-full bg-white scroll-mt-24">
 
         <div className="max-w-6xl mx-auto px-6 py-16">
 
@@ -205,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Section 4 - Sobre a Psicóloga */}
-      <section id="sobre" className="w-full bg-gray-50">
+  <section id="sobre" className="w-full bg-gray-50 scroll-mt-24">
 
         <div className="max-w-4xl mx-auto px-6 py-16 flex flex-col lg:flex-row items-center gap-8">
 
@@ -260,7 +262,9 @@ export default function Home() {
       </section>
 
       {/* Section 5 - Benefícios da Terapia */}
-      <section id="beneficios" className="w-full bg-white">
+  {/* Anchor alias for header nav */}
+  <div id="sessoes" className="h-0 scroll-mt-24" aria-hidden="true"></div>
+  <section id="beneficios" className="w-full bg-white scroll-mt-24">
 
         <div className="max-w-6xl mx-auto px-6 py-16">
 
@@ -318,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* Section 6 - Depoimentos */}
-      <section id="depoimentos" className="w-full bg-gray-50">
+  <section id="depoimentos" className="w-full bg-gray-50 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 text-center">O que meus pacientes dizem</h2>
 
@@ -331,7 +335,7 @@ export default function Home() {
       </section>
 
       {/* Section 7 - Perguntas Frequentes */}
-      <section id="faq" className="w-full bg-white">
+  <section id="faq" className="w-full bg-white scroll-mt-24">
 
         <div className="max-w-4xl mx-auto px-6 py-16">
 
@@ -384,7 +388,9 @@ export default function Home() {
       </section>
 
       {/* Section 8 - CTA Final */}
-      <section id="cta-final" className="w-full bg-emerald-50">
+  {/* Anchor alias for header nav */}
+  <div id="contato" className="h-0 scroll-mt-24" aria-hidden="true"></div>
+  <section id="cta-final" className="w-full bg-emerald-50 scroll-mt-24">
 
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
 
