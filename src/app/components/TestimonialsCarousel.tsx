@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 type Testimonial = {
   id: number;
@@ -43,18 +44,29 @@ export default function TestimonialsCarousel() {
   return (
     <div className="relative">
       <div className="overflow-hidden">
-        <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${index * 100}%)` }}>
-          {testimonials.map((t) => (
-            <div key={t.id} className="min-w-full px-4">
-              <blockquote className="p-6 bg-white rounded-lg shadow-sm mx-auto max-w-xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-semibold">{t.initials}</div>
-                  <div className="text-sm text-gray-600">{t.initials}., {t.age} anos</div>
-                </div>
-                <p className="mt-4 text-gray-700">{t.text}</p>
-              </blockquote>
-            </div>
-          ))}
+        <div className="relative h-full">
+          <AnimatePresence mode="wait">
+            {testimonials.map((t, i) => (
+              i === index && (
+                <motion.div
+                  key={t.id}
+                  className="px-4"
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -40 }}
+                  transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <blockquote className="p-6 bg-white rounded-lg shadow-sm mx-auto max-w-xl">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 font-semibold">{t.initials}</div>
+                      <div className="text-sm text-gray-600">{t.initials}., {t.age} anos</div>
+                    </div>
+                    <p className="mt-4 text-gray-700">{t.text}</p>
+                  </blockquote>
+                </motion.div>
+              )
+            ))}
+          </AnimatePresence>
         </div>
       </div>
 
