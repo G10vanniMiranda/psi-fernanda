@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import Footer from "./components/footer";
 import Header from "./components/header";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
         <Header />
         <main className="pt-16">{children}</main>
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

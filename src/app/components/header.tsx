@@ -1,6 +1,4 @@
 "use client";
-
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -60,19 +58,19 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link
-              href="https://wa.me/5569999781800?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia."
+            <a
+              href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia."
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:inline-block"
             >
               <button
                 type="button"
-                className="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-700 transition cursor-pointer"
+                className="bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-emerald-700 transition cursor-pointer cta-animated animate-cta-glow animate-cta-nudge"
               >
                 Agendar Consulta
               </button>
-            </Link>
+            </a>
 
             <button
               type="button"
@@ -125,15 +123,15 @@ export default function Header() {
             </a>
           ))}
 
-          <Link
-            href="https://wa.me/5569999781800?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia."
+          <a
+            href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia."
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
-            className="mt-2 block w-full bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium text-center hover:bg-emerald-700 transition"
+            className="mt-2 block w-full bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium text-center hover:bg-emerald-700 transition cta-animated animate-cta-glow animate-cta-nudge"
           >
             Agendar Consulta
-          </Link>
+          </a>
         </div>
       </div>
     </header>

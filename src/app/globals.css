@@ -4,3 +4,108 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+/* Attention animations - lightweight and motion-safe */
+@media (prefers-reduced-motion: no-preference) {
+  /* CTA continuous attention */
+  @keyframes cta-glow {
+    0%,
+    100% {
+      box-shadow: 0 8px 18px rgba(16, 185, 129, 0.18);
+    }
+    50% {
+      box-shadow: 0 12px 26px rgba(16, 185, 129, 0.32);
+    }
+  }
+
+  @keyframes cta-nudge {
+    0%,
+    92%,
+    100% {
+      transform: translateY(0);
+    }
+    95% {
+      transform: translateY(-3px);
+    }
+    97% {
+      transform: translateY(0);
+    }
+    99% {
+      transform: translateY(-2px);
+    }
+  }
+
+  .cta-animated {
+    will-change: transform, box-shadow;
+  }
+  .animate-cta-glow {
+    animation: cta-glow 3.6s ease-in-out infinite;
+  }
+  .animate-cta-nudge {
+    animation: cta-nudge 6.5s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+
+  /* Pause CTA animations on user interaction */
+  .cta-animated:hover,
+  .cta-animated:focus-visible {
+    animation-play-state: paused;
+  }
+  @keyframes bounce-slow {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: scale(1);
+      filter: blur(8px);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.08);
+      filter: blur(12px);
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      opacity: 0.6;
+      transform: scale(0.9);
+    }
+    70% {
+      opacity: 0.1;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.35);
+    }
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 1.6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+  .animate-pulse-glow {
+    animation: pulse-glow 2.2s ease-in-out infinite;
+  }
+  .animate-ripple {
+    animation: ripple 2.4s ease-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bounce-slow,
+  .animate-pulse-glow,
+  .animate-ripple,
+  .animate-cta-glow,
+  .animate-cta-nudge {
+    animation: none;
+  }
+}

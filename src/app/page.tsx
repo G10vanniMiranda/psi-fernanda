@@ -70,7 +70,7 @@ export default function Home() {
               className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-start gap-3 sm:gap-4"
               variants={fadeInUp}
             >
-              <CTAButton href="https://wa.me/5569999781800?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia.">
+              <CTAButton href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia.">
                 Agende sua primeira sessão
               </CTAButton>
 
@@ -448,7 +448,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div className="mt-10 text-center" variants={fadeInUp}>
-            <CTAButton href="https://wa.me/5569999781800?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia.">
+            <CTAButton href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia.">
               Agende sua sessão e dê o primeiro passo para cuidar de você
             </CTAButton>
           </motion.div>
@@ -671,7 +671,7 @@ export default function Home() {
           <motion.div className="mt-10 text-center" variants={fadeInUp}>
             <CTAButton
               variant="link"
-              href="https://wa.me/5569999781800?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia."
+              href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia."
             >
               Comece sua jornada de transformação emocional.
             </CTAButton>
@@ -795,7 +795,7 @@ export default function Home() {
           <motion.div className="mt-8 text-center" variants={fadeInUp}>
             <CTAButton
               variant="link"
-              href="https://wa.me/5569999781800?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20terapia."
+              href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20terapia."
             >
               Ficou com dúvidas? Fale comigo agora mesmo.
             </CTAButton>
@@ -827,7 +827,7 @@ export default function Home() {
 
           <motion.div className="mt-6" variants={fadeInUp}>
             <CTAButton
-              href="https://wa.me/5569999781800?text=Olá!%20Quero%20agendar%20uma%20sessão"
+              href="https://api.whatsapp.com/send?phone=5569999781800&text=Ol%C3%A1!%20Quero%20agendar%20uma%20sess%C3%A3o"
               ariaLabel="Agendar consulta pelo WhatsApp"
             >
               <span className="text-lg">🟢</span>
