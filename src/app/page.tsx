@@ -40,7 +40,20 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       {/* Section 1 - Hero */}
-      <section id="inicio" className="w-full bg-white scroll-mt-24">
+      <section id="inicio" className="relative w-full scroll-mt-24">
+        {/* Hero background image */}
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/fundo-hero.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          {/* Light overlay to ensure text readability */}
+          <div aria-hidden className="absolute inset-0 bg-white/70" />
+        </div>
         <motion.div
           className="max-w-6xl mx-auto px-6 py-16 flex flex-col-reverse lg:flex-row items-center gap-8"
           variants={stagger}
@@ -59,7 +72,7 @@ export default function Home() {
             </h1>
 
             <motion.p
-              className="mt-4 text-gray-600 text-base sm:text-lg"
+              className="mt-4 text-gray-800 text-base sm:text-lg"
               variants={fadeInUp}
             >
               Sou Fernanda Miranda, psicóloga clínica especializada em ajudar
@@ -74,14 +87,14 @@ export default function Home() {
                 Agende sua primeira sessão
               </CTAButton>
 
-              <span className="text-sm text-gray-500 mt-1 sm:mt-0">
+              <span className="text-sm text-gray-800 mt-1 sm:mt-0">
                 Atendimento online e presencial
               </span>
             </motion.div>
 
             {/* Trust icons */}
             <motion.div
-              className="mt-8 flex flex-wrap items-center gap-4 justify-center lg:justify-start text-gray-600"
+              className="mt-8 flex flex-wrap items-center gap-4 justify-center lg:justify-start text-gray-800"
               variants={stagger}
             >
               <motion.div
@@ -469,11 +482,11 @@ export default function Home() {
             variants={fadeIn}
           >
             <motion.div
-              className="w-56 h-56 rounded-xl overflow-hidden shadow-lg bg-gray-100"
+              className="w-56 h-80 rounded-xl overflow-hidden shadow-lg bg-gray-100"
               variants={fadeInUp}
             >
               <Image
-                src="/psicologa.jpeg"
+                src="/psicologa.jpg"
                 alt="Foto da psicóloga Fernanda Miranda"
                 width={560}
                 height={560}
