@@ -3,7 +3,7 @@
 export default function FloatingWhatsApp() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      {/* Pulsing ripples behind the button */}
+      {/* Ondas pulsantes atrás do botão */}
       <span
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10 rounded-full bg-emerald-500/30 blur-md animate-pulse-glow"
@@ -20,11 +20,11 @@ export default function FloatingWhatsApp() {
         aria-label="Falar no WhatsApp"
         className="group relative inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-emerald-400 transition focus:outline-none focus:ring-2 focus:ring-offset-2 animate-bounce-slow"
       >
-        {/* Shine sweep */}
+        {/* Brilho em varredura */}
         <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
           <span className="pointer-events-none absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-white/30 opacity-0 translate-x-[-120%] transition-all duration-500 ease-out group-hover:opacity-40 group-hover:translate-x-[120%]" />
         </span>
-        {/* WhatsApp icon */}
+        {/* Ícone do WhatsApp */}
         <svg
           aria-hidden="true"
           className="h-7 w-7 drop-shadow-sm"

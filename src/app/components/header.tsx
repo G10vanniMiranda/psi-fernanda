@@ -107,7 +107,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Menu móvel */}
       <div
         className={`md:hidden ${open ? "block" : "hidden"} border-t border-slate-100 bg-white/90`}
       >

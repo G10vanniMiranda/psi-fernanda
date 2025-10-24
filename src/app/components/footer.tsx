@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="w-full border-t border-slate-200 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 py-10">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
-          {/* Brand */}
+          {/* Marca */}
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 font-semibold">
               {/* Placeholder para logotipo */}
@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Info columns */}
+          {/* Colunas de informações */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-sm text-slate-700">
             <div>
               <p className="font-semibold text-slate-900">Contato</p>

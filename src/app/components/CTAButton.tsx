@@ -43,7 +43,7 @@ export default function CTAButton({
       aria-label={ariaLabel}
       className={cn(base, variants[variant], className)}
     >
-      {/* Shine sweep */}
+      {/* Brilho em varredura */}
       <span className="pointer-events-none absolute inset-0 rounded-lg overflow-hidden">
         <span className="pointer-events-none absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-white/30 opacity-0 translate-x-[-120%] transition-all duration-500 ease-out group-hover:opacity-50 group-hover:translate-x-[120%]" />
       </span>
@@ -55,7 +55,7 @@ export default function CTAButton({
       aria-label={ariaLabel}
       className={cn(base, variants[variant], className)}
     >
-      {/* Shine sweep */}
+      {/* Brilho em varredura */}
       <span className="pointer-events-none absolute inset-0 rounded-lg overflow-hidden">
         <span className="pointer-events-none absolute -left-1/2 top-0 h-full w-1/2 -skew-x-12 bg-white/30 opacity-0 translate-x-[-120%] transition-all duration-500 ease-out group-hover:opacity-50 group-hover:translate-x-[120%]" />
       </span>

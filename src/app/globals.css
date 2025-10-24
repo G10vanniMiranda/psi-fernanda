@@ -5,9 +5,9 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Attention animations - lightweight and motion-safe */
+/* Animações de atenção — leves e respeitam as preferências do usuário */
 @media (prefers-reduced-motion: no-preference) {
-  /* CTA continuous attention */
+  /* Atenção contínua dos CTAs */
   @keyframes cta-glow {
     0%,
     100% {
@@ -39,13 +39,13 @@ body {
     will-change: transform, box-shadow;
   }
   .animate-cta-glow {
-    animation: cta-glow 3.6s ease-in-out infinite;
+    animation: cta-glow 2s ease-in-out infinite;
   }
   .animate-cta-nudge {
-    animation: cta-nudge 6.5s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    animation: cta-nudge 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
   }
 
-  /* Pause CTA animations on user interaction */
+  /* Pausar animações dos CTAs na interação do usuário */
   .cta-animated:hover,
   .cta-animated:focus-visible {
     animation-play-state: paused;

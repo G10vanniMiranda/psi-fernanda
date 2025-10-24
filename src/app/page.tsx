@@ -39,9 +39,9 @@ const stagger = {
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      {/* Section 1 - Hero */}
+      {/* Seção 1 - Hero */}
       <section id="inicio" className="relative w-full scroll-mt-24">
-        {/* Hero background image */}
+        {/* Imagem de fundo da hero */}
         <div className="absolute inset-0 -z-10">
           <Image
             src="/fundo-hero.jpg"
@@ -51,7 +51,7 @@ export default function Home() {
             sizes="100vw"
             className="object-cover object-center"
           />
-          {/* Light overlay to ensure text readability */}
+          {/* Sobreposição clara para garantir legibilidade do texto */}
           <div aria-hidden className="absolute inset-0 bg-white/70" />
         </div>
         <motion.div
@@ -61,7 +61,7 @@ export default function Home() {
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
         >
-          {/* Left: Text */}
+          {/* Esquerda: Texto */}
           <motion.div
             className="w-full lg:w-1/2 text-center lg:text-left"
             variants={fadeInUp}
@@ -92,7 +92,7 @@ export default function Home() {
               </span>
             </motion.div>
 
-            {/* Trust icons */}
+            {/* Ícones de confiança */}
             <motion.div
               className="mt-8 flex flex-wrap items-center gap-4 justify-center lg:justify-start text-gray-800"
               variants={stagger}
@@ -171,7 +171,7 @@ export default function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Photo */}
+          {/* Direita: Foto */}
           <motion.div
             className="w-full lg:w-1/2 flex items-center justify-center"
             variants={fadeIn}
@@ -180,7 +180,7 @@ export default function Home() {
               className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-xl overflow-hidden shadow-lg bg-gray-100 flex items-center justify-center"
               variants={fadeIn}
             >
-              {/* Placeholder image: replace /psicologa.jpg in /public */}
+              {/* Imagem de exemplo: substitua por /psicologa.jpg em /public */}
               <Image
                 src="/psicologa.jpeg"
                 alt="Foto da psicóloga"
@@ -195,7 +195,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Section 2 - Problemas que o paciente enfrenta */}
+      {/* Seção 2 - Problemas que o paciente enfrenta */}
       <section id="problemas" className="w-full bg-gray-50 scroll-mt-24">
         <motion.div
           className="max-w-4xl mx-auto px-6 py-14"
@@ -327,8 +327,8 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Section 3 - Solução */}
-      {/* Anchor alias for header nav */}
+      {/* Seção 3 - Solução */}
+      {/* Âncora auxiliar para navegação no cabeçalho */}
       <div id="abordagem" className="h-0 scroll-mt-24" aria-hidden="true"></div>
       <section id="solucao" className="w-full bg-white scroll-mt-24">
         <motion.div

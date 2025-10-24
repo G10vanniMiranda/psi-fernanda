@@ -42,7 +42,7 @@ function TestimonialsCarousel() {
   const timeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
-    // autoplay with stable interval to satisfy exhaustive-deps
+    // autoplay com intervalo estável (regra de dependências)
     timeoutRef.current = window.setInterval(() => {
       setIndex((i) => (i + 1) % testimonials.length);
     }, 5000) as unknown as number;
@@ -95,7 +95,7 @@ function TestimonialsCarousel() {
         </div>
       </div>
 
-      {/* Controls */}
+      {/* Controles */}
       <button
         type="button"
         aria-label="previous"
@@ -113,7 +113,7 @@ function TestimonialsCarousel() {
         ›
       </button>
 
-      {/* Dots */}
+      {/* Indicadores */}
       <div className="mt-4 flex items-center justify-center gap-2">
         {testimonials.map((t, i) => (
           <button
